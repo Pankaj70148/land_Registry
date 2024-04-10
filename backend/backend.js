@@ -219,14 +219,14 @@ app.get("/pg",async(req,res)=>{
 //     let otp = otpGen.generate(6, { digits: true, upperCaseAlphabets: false, lowerCaseAlphabets:
 //       false, specialChars: false })
 
-//       var sid = "AC18e6ab7d93bf8e090e6c0cb2552ed040";
-// var auth_token = "fbe77bf883012a6b43f1bb2bf60507e9";
+//       var sid = "[enter sid]";
+// var auth_token = "[ENTER AUTH_TOKEN}";
 // var twilio = require("twilio")(sid, auth_token);
 
 // twilio.messages
 //     .create({
-//         from: "+14157232814",
-//         to: "+918874103590",
+//         from: "[ENTER TWILIO NO]",
+//         to: "[ENTER YOUR NO]",
 //         body: `this is testing otp is ${otp}`,
 //     })
 //     .then(function (res) { console.log("otp has sent to register mobile !") })                
