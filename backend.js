@@ -6,8 +6,8 @@ var nodemailer = require('nodemailer');
 const express= require('express');
 const app  = express()
 const path= require('path')
-const dr= path.join(__dirname,"../frontend")
-const d= path.join(__dirname,"../example")
+const dr= path.join(__dirname,"/frontend")
+const d= path.join(__dirname,"/example")
 let otp_val = Math.floor(Math.random()*10000);
 
 app.set('view engine', 'ejs');
