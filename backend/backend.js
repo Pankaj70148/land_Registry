@@ -408,9 +408,9 @@ app.get('/qr',async(req,res)=>{
 });
 
 
+let PORT= process.env.PORT||9000
 
-
-
-
-app.listen(9000)    
+app.listen(PORT,()=>{
+  console.log(`Port is running on ${PORT}`)
+})    
 
