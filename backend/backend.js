@@ -1,6 +1,4 @@
-// const ejs=  require('ejs')
-//  const {Web3} =  require('web3');
-// const web3 = new Web3('HTTP://127.0.0.1:7545'); 
+
 const bcrypt = require('bcrypt');
 
 const otpGen = require("otp-generator")
@@ -14,7 +12,7 @@ let otp_val = Math.floor(Math.random()*10000);
 
 app.set('view engine', 'ejs');
 const mongoose= require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/db')
+mongoose.connect('mongodb+srv://pankajsingh00203:121Pankaj@cluster0.ifzvhji.mongodb.net/db')
 
 const scema=  new mongoose.Schema(
     {name: String,
