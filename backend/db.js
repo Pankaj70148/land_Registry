@@ -1,20 +1,20 @@
 
-const { create }= require('ipfs-http-client')
+// const { create }= require('ipfs-http-client')
 
-async function ipfsClient(){
-    const ipfs = await create({
-    host:"ipfs.infura.io",
-    port:5001,
-    protocol:"https"
-    }
-    );
-    return ipfs;
+// async function ipfsClient(){
+//     const ipfs = await create({
+//     host:"ipfs.infura.io",
+//     port:5001,
+//     protocol:"https"
+//     }
+//     );
+//     return ipfs;
    
-   }
+//    }
    
-   async function saveText(){
-       let ipfs= await ipfsClient();
-      let result=  await ipfs.add("hello world");
-      console.log(result);
-   }
-   saveText()
+//    async function saveText(){
+//        let ipfs= await ipfsClient();
+//       let result=  await ipfs.add("hello world");
+//       console.log(result);
+//    }
+//    saveText()
